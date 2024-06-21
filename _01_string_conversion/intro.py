@@ -10,8 +10,8 @@ if __name__ == '__main__':
     #   We are adding "3" + "7" to get 37
     num1 = 3
     num2 = 7
-    messagebox.showinfo(None, num1 + num2)
-    messagebox.showinfo(None, str(num1) + str(num2))
+    messagebox.showinfo(title="Word", message=(num1) + (num2))
+    messagebox.showinfo(title="Word", message=str(num1) + str(num2))
 
     # TODO: String can also be converted to integers using the int() function
     #  The first pop-up combines the 2 strings "3" and '7' to get "37"
@@ -24,3 +24,4 @@ if __name__ == '__main__':
     # TODO: Uncomment the code below and run the program again
     #   Use str() to print num1 and num2
     # messagebox.showinfo(None, "num1 = " + num1 + " num2 = " + num2)
+    messagebox.showinfo(None, "num1 = " + num1 + " num2 = " + num2)

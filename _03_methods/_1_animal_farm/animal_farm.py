@@ -13,11 +13,33 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
-
+    while True:
+       a = simpledialog.askstring(title="animals", prompt="Enter a animal, a cat,cow,dog,duck,or llama.")
     # TODO 2. Make it so that the user can keep entering new animals.
+       if a == "Cat" or a == "cat":
+           show_image("cat.jpg")
+           playsound("meow.wav")
+       else:
+           if a == "cow" or a == "Cow":
+               show_image("cow.jpg")
+               playsound("moo.wav")
+           else:
+               if a == "dog" or a == "Dog":
+                   show_image("dog.jpg")
+                   playsound("woof.wav")
+               else:
+                   if a == "duck" or a == "Duck":
+                       show_image("duck.jpg")
+                       playsound("quack.wav")
+                   else:
+                       if a == "llama" or a == "Llama":
+                           show_image("llama.jpg")
+                           playsound("llama.wav")
+                       else:
+                            if a == "Exit" or a == "exit":
+                                break
 
     # TODO 3. If the user enters 'exit', stop the program
-
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
